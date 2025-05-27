@@ -37,7 +37,7 @@ export default function App() {
 
   function handelClearList() {
     const confirmed = window.confirm(
-      "Are you sure you want to deelte all items"
+      "Are you sure you want to delete all items"
     );
     confirmed && setItems([]);
   }
@@ -53,6 +53,7 @@ export default function App() {
       <PackingList
         items={items}
         onAddItems={showItems}
+        z
         onDeleteItems={handleDelete}
         onUpdateItem={handleToggleItem}
         onClearItems={handelClearList}
