@@ -53,7 +53,6 @@ export default function App() {
       <PackingList
         items={items}
         onAddItems={showItems}
-        z
         onDeleteItems={handleDelete}
         onUpdateItem={handleToggleItem}
         onClearItems={handelClearList}
